@@ -58,10 +58,10 @@ public final class AtlasFix {
         }
         try {
             stitcher.stitch();
-            return true;
         } catch (StitcherException e) {
             return false;
         }
+        return stitcher.getWidth() <= maxSize && stitcher.getHeight() <= maxSize; // 바닐라 expand 는 너비가 최대에 닿으면 높이를 최대보다 크게 늘리기도 해서 예외 없이 넘침
     }
 
     private static int anisotropy() {
