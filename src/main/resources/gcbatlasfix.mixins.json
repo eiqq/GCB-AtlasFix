@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.eiqui.gcbatlasfix.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"SpriteContentsAccessor",
+		"SpriteContentsMixin",
+		"SpriteLoaderMixin",
+		"TextureAtlasMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

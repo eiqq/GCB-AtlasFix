@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "gcbatlasfix",
+	"version": "${version}",
+	"name": "GCB Atlas Fix",
+	"description": "Caps texture atlas size and halves oversized resource pack sprites until the atlas fits, so older GPUs (e.g. GTX 970, 16384 max texture size) can load large server resource packs.",
+	"authors": [
+		"EIQUI"
+	],
+	"contact": {
+		"sources": "https://github.com/eiqq/GCB-AtlasFix"
+	},
+	"license": "CC0-1.0",
+	"environment": "client",
+	"mixins": [
+		"gcbatlasfix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}
